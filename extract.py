@@ -1,6 +1,5 @@
 import urllib.request
 from sklearn.feature_extraction.text import CountVectorizer
-
 #Loading Models: 
 
 import pickle
@@ -35,6 +34,7 @@ def classifier(text):
 
     if predict[0] and predict2[0]:
         return "Fake News"
+
     #elif (predict[0] and not predict2[0]) or (predict2[0] and not predict[0]): //fix later  
         #return "Unsure"
     else:

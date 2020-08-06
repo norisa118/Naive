@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>Naive</title>
+
+    </head>
+    <body class="html2">
+        {% extends "template.html" %}
+        {% block content %}
+
+        <div id="WelcScreen">
+            <ul class="menu">
+                <li id="linkone"><a href="{{ url_for('home') }}">Home</a></li>
+                <li id="linktwo"><a href="{{ url_for('naive') }}">Classify</a></li>
+            </ul>
+            <hr>
+            <h1>The Naive Bayes classifier has indicated that your news is </h1>
+        </div>
+
+        <div class="results">
+            {% if prediction[0] == 1%}
+            <h2 style="color:red;">Fake</h2>
+            {% elif prediction[0] == 0%}
+            <h2 style="color:#126435;">Real</h2>
+            {% endif %}
+
+            <div class="headings">
+                <h3 id="bd1"> Multinomial: </h3>
+                <h3 id="bd2"> Bernoulli:</h3>
+            </div>
+
+            <div class="breakdowns">
+                <h1 id="numbers1"> {{ prediction[1] }} </h1> <!-- Multi -->
+                <h1 id="numbers2"> {{ prediction[2] }} </h1> <!-- Bern -->
+            </div>
+
+        </div>
+        
+
+        {% endblock %}
+    </body>
+</html>

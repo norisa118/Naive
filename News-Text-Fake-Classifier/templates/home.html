@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>Home</title>
+    </head>
+    <body class="html1">
+        {% extends "template.html" %}
+        {% block content %}
+        <div id="WelcScreen">
+            <ul class="menu">
+                <li id="linkone"><a href="{{ url_for('home') }}">Home</a></li>
+                <li id="linktwo"><a href="{{ url_for('naive') }}">Classify</a></li> <!--might need to be changed to about, or we need to add an about-->
+            </ul>
+            <hr>
+        </div>
+        
+        <div class= "ml-container">
+            <form action="{{ url_for('naive')}}" method="POST">
+                <div id="text">
+                    <p>Insert URL Here: </p>
+                </div>
+                <!-- <input type="text" name="comment"/> -->
+                <textarea name="url" rows="4" cols="50"></textarea>
+                <br/>
+        
+                <input type="submit" class="btn-info" value="Predict">
+                
+            </form>
+        </div>
+            
+        {% endblock %}
+    </body>
+</html>

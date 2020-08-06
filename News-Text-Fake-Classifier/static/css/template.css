@@ -1,0 +1,128 @@
+
+.html1 {
+    background-image: url('backg1.png');
+    position:relative; 
+    background-position: 50%;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.html2 {
+    background-image: url('img2.PNG');
+    position:relative; 
+    background-position: 50%;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.ml-container {
+    position:relative; 
+    margin-top: 325px; 
+    text-align: center;
+}
+
+#text{
+    font-size: large;
+    font-weight: bold;
+    color: #714619; 
+}
+
+textarea {
+    background-color:#fff4e1; 
+    border-radius: 5px;
+}
+
+.btn-info {
+    background-color:#fff4e1; 
+    color: #714619;
+    padding: 10px 20px; 
+    margin-top: 30px; 
+    border:1px solid #714619; 
+    font-weight: bold;
+    border-radius: 10px; 
+}
+
+hr {
+    border: 0;
+    border-top: 1.5px solid #f06b42;
+    width: 196%;
+    position: relative;
+    left: -50%;
+}
+
+
+li {
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 30px; 
+ }
+
+ #linkone{
+     float: left; 
+ }
+
+ #linktwo{
+     float: right; 
+ }
+
+ h1{
+     text-align: center; 
+     color:  #714619; 
+ }
+
+ h2{
+     text-align: center;
+     font-size: 60px;
+     font-weight: bolder;
+     margin: 0 auto; 
+     padding: 0; 
+ }
+
+
+.headings {
+    padding: 30px; 
+}
+
+#bd1 {
+    position: absolute; 
+    top: 53%;
+    right: 88.5%;
+    color: #714619; 
+}
+
+#bd2 {
+    position: absolute; 
+    top: 53%;
+    left: 93%;
+    color: #714619; 
+
+}
+
+.breakdowns {
+    padding: 30px;
+ 
+}
+
+#numbers1 {
+    position: absolute; 
+    top: 59%;
+    right: 83%;
+    color: #714619; 
+
+}
+
+#numbers2 {
+    position: absolute; 
+    top: 59%;
+    left: 88%;
+    color: #714619; 
+
+}

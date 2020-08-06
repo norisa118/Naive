@@ -36,12 +36,13 @@ Naive2.fit(X_train_counts, y_train)
 from sklearn.metrics import accuracy_score
 #Multinomial
 predictions_NB = Naive.predict(X_test)
-print("Accuracy Score:",accuracy_score(predictions_NB, y_test)*100)
+acScore1 = accuracy_score(predictions_NB, y_test)*100
+print((Naive.predict_proba(X_test)).shape)
 
 #Bernoulli
 predictions_NB2 = Naive2.predict(X_test)
-print("Accuracy Score 2:",accuracy_score(predictions_NB2, y_test)*100)
-
+acScore2 = accuracy_score(predictions_NB2, y_test)*100
+print((Naive2.predict_proba(X_test)).shape)
 
 # _____________________________________ SAVING MODELS_______________________________________________________________
 
